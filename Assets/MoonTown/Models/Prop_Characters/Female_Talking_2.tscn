@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Assets/MoonTown/Models/Prop_Characters/Female_Talking_2.glb" type="PackedScene" id=1]
+
+[node name="Female_Talking_2" instance=ExtResource( 1 )]
