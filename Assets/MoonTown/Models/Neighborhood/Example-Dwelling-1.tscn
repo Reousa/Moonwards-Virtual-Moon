@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Assets/MoonTown/Models/Neighborhood/Example-Dwelling-1.glb" type="PackedScene" id=1]
 [ext_resource path="res://Assets/MoonTown/Models/Toilet/Toilet_Mark2.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Assets/MoonTown/Models/Prop_Characters/Female_Talking_1.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Assets/MoonTown/Models/Prop_Characters/Male_Talking_2.tscn" type="PackedScene" id=4]
 
 [node name="Example-Dwelling-1" instance=ExtResource( 1 )]
 
@@ -9,3 +11,41 @@
 transform = Transform( 0.86537, 0, 0.501133, 0, 1, 0, -0.501133, 0, 0.86537, -1.59228, 2.83805, -11.2914 )
 
 [node name="Toilet_Mark2" parent="LOD0/Toilet-Dwelling" index="0" instance=ExtResource( 2 )]
+
+[node name="LOD1" parent="." index="2"]
+visible = false
+
+[node name="LOD2" parent="." index="3"]
+visible = false
+
+[node name="OmniLight" type="OmniLight" parent="." index="4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.954252, 4.34242, -13.0486 )
+shadow_enabled = true
+omni_range = 3.7
+omni_attenuation = 1.56917
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="OmniLight2" type="OmniLight" parent="." index="5"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.54401, 1.72113, -10.731 )
+light_color = Color( 1, 1, 0.913725, 1 )
+light_energy = 0.82
+light_specular = 0.17
+shadow_enabled = true
+omni_range = 2.5
+omni_attenuation = 1.46409
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="OmniLight3" type="OmniLight" parent="." index="6"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.86064, 1.54345, -14.2574 )
+omni_range = 3.71147
+omni_attenuation = 1.56917
+
+[node name="Male_Talking_2" parent="." index="7" instance=ExtResource( 4 )]
+transform = Transform( -0.117763, 0, 0.993042, 0, 1, 0, -0.993042, 0, -0.117763, -0.721377, 0, -12.1327 )
+
+[node name="Female_Talking_1" parent="." index="8" instance=ExtResource( 3 )]
+transform = Transform( 0.531132, 0, -0.847289, 0, 1, 0, 0.847289, 0, 0.531132, 0.61311, 0, -12.8799 )
