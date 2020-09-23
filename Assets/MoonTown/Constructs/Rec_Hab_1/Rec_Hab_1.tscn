@@ -112,6 +112,9 @@ interactions_active = true
 stairs_step_count = 11
 generate_editor_visual = false
 
+[node name="LOD1" parent="." index="11"]
+visible = false
+
 [node name="PoolWater001" parent="LOD1" index="1"]
 material/0 = ExtResource( 7 )
 
@@ -119,3 +122,106 @@ material/0 = ExtResource( 7 )
 material/0 = ExtResource( 6 )
 material/1 = ExtResource( 5 )
 material/2 = ExtResource( 4 )
+
+[node name="LOD2" parent="." index="12"]
+visible = false
+
+[node name="OmniLight" type="OmniLight" parent="." index="13"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.73068, 3.9555, -8.41831 )
+light_color = Color( 0.980392, 0.980392, 0.929412, 1 )
+light_energy = 1.96
+omni_range = 15.9
+omni_attenuation = 2.73208
+
+[node name="OmniLight2" type="OmniLight" parent="." index="14"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.102305, 3.9555, -21.7019 )
+light_color = Color( 0.980392, 0.980392, 0.929412, 1 )
+light_energy = 1.96
+omni_range = 15.9
+omni_attenuation = 2.73208
+
+[node name="OmniLight3" type="OmniLight" parent="." index="15"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.14955, 3.9555, -35.8865 )
+light_color = Color( 0.980392, 0.980392, 0.929412, 1 )
+light_energy = 1.96
+omni_range = 15.9
+omni_attenuation = 2.73208
+
+[node name="OmniLight4" type="OmniLight" parent="." index="16"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.93448, 3.9555, -50.1654 )
+light_color = Color( 0.980392, 0.980392, 0.929412, 1 )
+light_energy = 1.96
+omni_range = 15.9
+omni_attenuation = 2.73208
+
+[node name="OmniLight5" type="OmniLight" parent="." index="17"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.2859, 5.68728, -34.8722 )
+light_color = Color( 0.796078, 0.968627, 0.882353, 1 )
+omni_range = 29.7
+omni_attenuation = 3.605
+
+[node name="OmniLight6" type="OmniLight" parent="." index="18"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.7603, 5.68728, -17.7092 )
+light_color = Color( 0.796078, 0.968627, 0.882353, 1 )
+omni_range = 29.7
+omni_attenuation = 3.605
+
+[node name="OmniLight7" type="OmniLight" parent="." index="19"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.62361, 6.7059, 1.65657 )
+light_color = Color( 0.984314, 0.964706, 0.682353, 1 )
+light_energy = 1.69
+omni_range = 2.23681
+
+[node name="OmniLight8" type="OmniLight" parent="." index="20"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.62361, 4.56428, 1.65657 )
+light_color = Color( 0.984314, 0.964706, 0.682353, 1 )
+light_energy = 1.69
+omni_range = 2.23681
+
+[node name="OmniLight9" type="OmniLight" parent="." index="21"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.62361, 2.19426, 1.65657 )
+light_color = Color( 0.984314, 0.964706, 0.682353, 1 )
+light_energy = 1.69
+omni_range = 2.23681
+
+[node name="OmniLight10" type="OmniLight" parent="." index="22"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.62361, 0.0488939, 1.65657 )
+light_color = Color( 0.984314, 0.964706, 0.682353, 1 )
+light_energy = 1.69
+omni_range = 2.23681
+
+[node name="OmniLight11" type="OmniLight" parent="." index="23"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.62361, -2.18483, 1.65657 )
+light_color = Color( 0.984314, 0.964706, 0.682353, 1 )
+light_energy = 1.69
+omni_range = 2.23681
+
+[node name="OmniLight12" type="OmniLight" parent="." index="24"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.01681, 6.78642, -3.06008 )
+light_color = Color( 0.984314, 0.964706, 0.682353, 1 )
+light_energy = 1.69
+omni_range = 2.23681
+
+[node name="OmniLight13" type="OmniLight" parent="." index="25"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.01681, 4.6448, -3.06008 )
+light_color = Color( 0.984314, 0.964706, 0.682353, 1 )
+light_energy = 1.69
+omni_range = 2.23681
+
+[node name="OmniLight14" type="OmniLight" parent="." index="26"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.01681, 2.27479, -3.06008 )
+light_color = Color( 0.984314, 0.964706, 0.682353, 1 )
+light_energy = 1.69
+omni_range = 2.23681
+
+[node name="OmniLight15" type="OmniLight" parent="." index="27"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.01681, 0.129418, -3.06008 )
+light_color = Color( 0.984314, 0.964706, 0.682353, 1 )
+light_energy = 1.69
+omni_range = 2.23681
+
+[node name="OmniLight16" type="OmniLight" parent="." index="28"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.01681, -2.10431, -3.06008 )
+light_color = Color( 0.984314, 0.964706, 0.682353, 1 )
+light_energy = 1.69
+omni_range = 2.23681
