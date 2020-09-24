@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Assets/MoonTown/Models/Neighborhood/Shared-Facilities-1.glb" type="PackedScene" id=1]
 [ext_resource path="res://Assets/MoonTown/Models/Toilet/Toilet_Mark2.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Assets/MoonTown/Models/Prop_Characters/Male_Gazing.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Assets/MoonTown/Models/Prop_Characters/Male_Talking_1.tscn" type="PackedScene" id=4]
 
 [node name="Shared-Facilities-1" instance=ExtResource( 1 )]
 
@@ -21,3 +23,45 @@ transform = Transform( -1.62921e-07, 0, -1, 0, 1, 0, 1, 0, -1.62921e-07, 12.0621
 
 [node name="Toilet_Mark2" parent="LOD0/Marker-Toilet-3" index="0" instance=ExtResource( 2 )]
 transform = Transform( 0.998824, 0, -0.0484837, 0, 1, 0, 0.0484837, 0, 0.998824, 0, 0, 0 )
+
+[node name="LOD1" parent="." index="1"]
+visible = false
+
+[node name="LOD2" parent="." index="2"]
+visible = false
+
+[node name="OmniLight" type="OmniLight" parent="." index="4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.78116, -0.624036, -3.44314 )
+light_color = Color( 1, 0.968627, 0.968627, 1 )
+light_energy = 1.32
+omni_range = 7.7
+omni_attenuation = 1.41421
+
+[node name="OmniLight4" type="OmniLight" parent="." index="5"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.678539, -0.624036, 7.56911 )
+light_color = Color( 1, 0.968627, 0.968627, 1 )
+shadow_enabled = true
+omni_range = 14.9
+omni_attenuation = 2.54912
+
+[node name="OmniLight2" type="OmniLight" parent="." index="6"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.4374, -0.676396, -10.1974 )
+light_color = Color( 0.992157, 0.984314, 0.866667, 1 )
+light_energy = 0.52
+light_specular = 1.0
+shadow_enabled = true
+omni_range = 3.6
+omni_attenuation = 0.68302
+
+[node name="OmniLight3" type="OmniLight" parent="." index="7"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14.3242, -0.676396, -8.08015 )
+light_color = Color( 0.996078, 0.996078, 0.882353, 1 )
+shadow_enabled = true
+omni_range = 4.8
+omni_attenuation = 0.965937
+
+[node name="Male_Gazing" parent="." index="8" instance=ExtResource( 3 )]
+transform = Transform( 0.0582086, 0, 0.998304, 0, 1, 0, -0.998304, 0, 0.0582086, 12.3552, -2.68109, -8.67618 )
+
+[node name="Male_Talking_1" parent="." index="9" instance=ExtResource( 4 )]
+transform = Transform( -0.73922, 0, 0.673464, 0, 1, 0, -0.673464, 0, -0.73922, 10.0804, -2.6802, -5.99765 )
