@@ -23,6 +23,8 @@ onready var screen: Node = self
 onready var collision_box: CollisionShape = get_node("Area/CollisionShape")
 onready var viewport: Node = get_node("Viewport")
 
+var screen_parent: Node = null
+
 var content_instance = null
 
 #When track_camera is on, rotate myself to face the camera at all times.
@@ -71,6 +73,10 @@ func _on_area_input_event(_camera, event, click_pos, _click_normal, _shape_idx):
 	percentage_pos.y *= -1
 	percentage_pos += Vector2(1, 1)
 	percentage_pos = percentage_pos / 2
+	var d = abs((screen_parent.rotation_degrees.y)/180)
+#	if d > 1:
+#		d -= 1
+	percentage_pos.x = (d - percentage_pos.x)
 	
 	#Account for screen scale
 	percentage_pos.x *= screen.scale.x
